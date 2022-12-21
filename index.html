@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <main class="md:h-screen bg-Very-dark-blue md:flex items-center justify-center px-4 py-8">
+      <div class="md:flex md:flex-row-reverse max-w-[1000px] md:max-h-[400px] rounded-[10px] overflow-hidden">
+        <div class="relative w-full">
+          <picture>
+            <source media="(min-width:650px)" srcset="images/image-header-desktop.jpg" />
+            <img class="h-full w-full" src="images/image-header-mobile.jpg" alt="#" />
+          </picture>
+          <div class="absolute inset-0 bg-Soft-violet bg-opacity-50"></div>
+        </div>
+
+        <div class="font w-full text-White bg-Dark-desaturated-blue flex justify-center items-center">
+          <div class="mx-5 py-8 md:mx-[50px] xl:mx-[75px]">
+            <h2 class="text-4xl py-2 text-center md:text-left">
+              Get <span class="text-Soft-violet">insights</span> that help your business grow.
+            </h2>
+            <p class="py-4 text-center md:text-left opacity-50">
+              Discover the benefits of data analytics and make better decisions regarding revenue, customer experience,
+              and overall efficiency.
+            </p>
+            <div class="md:flex md:justify-between xl:py-5 max-w-[330px] text-center md:text-left">
+              <div>
+                <p class="text-2xl">10k+</p>
+                <p class="uppercase text-[12px] opacity-50">companies</p>
+              </div>
+              <div class="py-4 md:py-0">
+                <p class="text-2xl">314</p>
+                <p class="uppercase text-[12px] opacity-50">templates</p>
+              </div>
+              <div>
+                <p class="text-2xl">12m+</p>
+                <p class="uppercase text-[12px] opacity-50">queries</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
